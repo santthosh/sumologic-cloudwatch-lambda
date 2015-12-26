@@ -1,5 +1,5 @@
 {
-  "name": "login",
+  "name": "sumologic-cloudwatch-lambda",
   "version": "0.0.1",
   "description": "AWS Lambda / API Gateway for CRUD operations on POSTS",
   "main": "index.js",
@@ -8,12 +8,15 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "lambda": {
-    "name": "login",
+    "name": "sumologic",
     "handler": "index.handler",
-    "role": "lambda-default"
+    "role": "lambda_default"
   },
   "dependencies": {
-    "q": "^1.4.1"
+    "aws-sdk": "^2.1.4",
+    "moment": "^2.10.6",
+    "q": "^1.4.1",
+    "request": "^2.67.0"
   },
   "devDependencies": {
     "del": "^1.1.0",
