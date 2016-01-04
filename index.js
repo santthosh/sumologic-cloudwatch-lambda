@@ -17,9 +17,10 @@ exports.handler = function(event, context) {
             result = JSON.parse(result.toString('utf8'));
             var lines = "";
             result.logEvents.forEach(function(log) {
-                lines += log.timestamp + " name=" + result.logGroup + " stream="+ result.logStream + " message=" + log.message.replace(/\n$/g,'') + "\n";
+                lines += log.timestamp + " name=" + result.logGroup +
+                    " stream="+ result.logStream +
+                    " message=" + JSON.stringify(log.message).replace(/\\\n$/g,'').replace(/\\\\"$/g,"'") + "\n";
             });
-            console.log(lines);
             zlib.gzip(lines, function(err, zipped) {
                 if (!err) {
                     request(
