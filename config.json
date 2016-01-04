@@ -1,7 +1,7 @@
 {
   "sumologic" : {
     "collector" : {
-      "url": "https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/ZaVnC4dhaV1-ZA9GJ2avWpoDYhPksOnIi1fMFzYrQANt6VM9CvbXzqvc5oasB-FhDG86252wbcHvKeQCsVlDut5iZ_EPz8IfQvE5DqyJaxdKguxT7eRKEA=="
+      "url": "https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/<use your http collector url>"
     }
   }
 }
