@@ -18,6 +18,7 @@ Beam CloudWatch logs to SumoLogic using AWS Lambda
 * Configure your AWS environment keys (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ACCOUNT_ID)
 * Modify config.json, add appropriate values as necessary
 * `gulp deploy` to build and deploy this to your AWS Lambda environment. Check login function in your selected region
+* Make sure to add appropriate CloudWatch logs as event sources to your lambda function
 
 ### Testing
 
